@@ -25,6 +25,7 @@ public class ReservationSystemTest {
     
     @Test
     public void isIdRoomCorrect(){
+        System.out.println("bromita jijia");
         System.out.println("bromita jije");
         ConferenceRoom romnt = new ConferenceRoom("1", 20);
         String process = romnt.getId();
