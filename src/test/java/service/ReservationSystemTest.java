@@ -25,6 +25,7 @@ public class ReservationSystemTest {
     
     @Test
     public void isIdRoomCorrect(){
+        System.out.println("bromita jije");
         ConferenceRoom romnt = new ConferenceRoom("1", 20);
         String process = romnt.getId();
         assertEquals("1", process);
@@ -32,6 +33,7 @@ public class ReservationSystemTest {
   // cuando el id del metodo getRoomById del roomDao sea "1", el cuarto del "1" sea roomt predeterminadamente
     @Test
     public void reserveroom(){
+        System.out.println("bromita jiji");
         ConferenceRoom romnt = new ConferenceRoom("1", 20);
         when(roomDao.getRoomById("1")).thenReturn(romnt);
         boolean process = system.reserveRoom("1");
@@ -39,6 +41,7 @@ public class ReservationSystemTest {
     }
     @Test
     public void cancelreservation(){
+        System.out.println("bromita jjajkdjxfiji");
         ConferenceRoom romnt = new ConferenceRoom("1", 20);
         romnt.setReserved(true);
         when(roomDao.getRoomById("1")).thenReturn(romnt);
