@@ -26,7 +26,7 @@ public class ReservationSystemTest {
     @Test
     public void isIdRoomCorrect(){
         System.out.println("fack");
-        System.out.println("bromita jije");
+        System.out.println("bromitgggfa jije");
         ConferenceRoom romnt = new ConferenceRoom("1", 20);
         String process = romnt.getId();
         assertEquals("1", process);
@@ -34,7 +34,7 @@ public class ReservationSystemTest {
   // cuando el id del metodo getRoomById del roomDao sea "1", el cuarto del "1" sea roomt predeterminadamente
     @Test
     public void reserveroom(){
-        System.out.println("bromita ffgiji");
+        System.out.println("bromita dssdfffggffgiji");
         ConferenceRoom romnt = new ConferenceRoom("1", 20);
         when(roomDao.getRoomById("1")).thenReturn(romnt);
         boolean process = system.reserveRoom("1");
@@ -42,7 +42,7 @@ public class ReservationSystemTest {
     }
     @Test
     public void cancelreservation(){
-        System.out.println("bromita jjadszesjkdjxfiji");
+        System.out.println("bromita jjadszesdfsjkdjxfiji");
         ConferenceRoom romnt = new ConferenceRoom("1", 20);
         romnt.setReserved(true);
         when(roomDao.getRoomById("1")).thenReturn(romnt);
@@ -51,7 +51,7 @@ public class ReservationSystemTest {
     }
     @Test
     public void ListRoom(){
-        System.out.println("bromita jjadszsxesjkdjxfiji");
+        System.out.println("bromita jjadszssdfxesjkdjxfiji");
         ConferenceRoom romnt = new ConferenceRoom("1", 20);
         ConferenceRoom romnt2 = new ConferenceRoom("2", 30);
         when(roomDao.getAllRooms()).thenReturn(List.of(romnt,romnt2));
@@ -61,7 +61,7 @@ public class ReservationSystemTest {
     }
     @Test
     public void Aviablerooms(){
-        System.out.println("bromita jjadszesjkdjxfiji");
+        System.out.println("bromita jjadszesjsdfkdjxfiji");
         ConferenceRoom romnt = new ConferenceRoom("1", 20);
         ConferenceRoom romnt2 = new ConferenceRoom("2", 30);
         romnt2.setReserved(false);
